@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <link href="/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<title>Coding Samples</title>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body class="pagesBodyFormat">
+<header>
+      <div class="headerText">
+        <h2>Tutorial Examples</h2>
+      </div>
+  </header>
+    <nav>
+            <ul>
+            <li><a href="http://www.chaupis.net">Home</a></li>
+            <li><a href="/pages/write_up.html">Write-Ups</a></li>
+            <li><a href="/pages/codingsamples.html">Coding Samples</a></li>
+        </ul>
+    </nav>
+    
+<div class="example">
+    <h1>Drawing Example</h1>
+    <img src="../images/awesomeface.png" class="exampleImage">
+    <br>Created this faux Awesome Face in part with OpenTechSchool's javascript tutorial:
+
+    <pre class="codeFormat">
+Code: 
+function drawing() {
+  color("green");
+  box(-100, 100, 200, 200);
+  
+  color("black");
+  circle(0,0, 52);
+  
+  color("yellow");
+  circle(0, 0, 50);
+  
+  color("black");
+  circle(-30, 10, 10);
+  circle(10, 10, 10);
+  
+  color("white");
+  circle(-30, 10, 7);
+  circle(10, 10, 7);
+  
+  color("black");
+  circle(-25, 12, 4);
+  circle(15, 13, 4);
+  
+  color("black");
+  lineWidth(10);
+  path("g -20 -10 q 30 -10 20 -70 c");
+  color("#990066");
+  fill();
+  
+  color("#CC6699");
+  circle(15, -30, 10);
+}</pre></div>
+
+<div class="example">
+    <h1>Color Manipulation and Loop Example</h1>
+    <img src="../images/spacefoot.png" class="exampleImage">
+    <br>Created this "green screen" image during CS101 (Stanford's Opencourse powered by OpenedX)
+    <pre>
+image = new SimpleImage("bluefoot.jpg");
+back = new SimpleImage("stars.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if(pixel.getBlue() > avg*1.1){
+  pixel2=back.getPixel(pixel.getX(), pixel.getY());
+  pixel.setRed(pixel2.getRed());
+  pixel.setGreen(pixel2.getGreen());
+  pixel.setBlue(pixel2.getBlue());
+  }
+}
+print(image);
+</pre></div>
+    
+
+<div class="example">
+    <h1>Looping with Table Example</h1>
+    <img src="../images/tablecountingmultiple.png" class="exampleImage">
+    <br>Created this count function using the CS101 framework and the US Census name data from 2010
+    <pre>
+table = new SimpleTable("baby-2010.csv");
+count1 = 0;
+count2 = 0;
+for (row: table) {
+  if(row.getField("name").startsWith("A")){
+   count1=count1 +1;
+  }
+  if(row.getField("name").startsWith("B")){
+   count2=count2 + 1;
+  } 
+}
+
+print("count: ", count1);
+print("count: ", count2);</pre></div>    
+
+</body>
+</html>

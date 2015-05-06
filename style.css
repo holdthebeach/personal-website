@@ -1,0 +1,114 @@
+#intro{
+background-color: rgb(189, 213, 255);
+color: navy;
+font-size: 18px;
+font-family: 'Roboto Condensed';
+word-spacing: 6px;
+margin: 10px 10px 10px;
+padding: 10px;
+text-align: justify;
+width: 700px;
+float: left;}
+
+#to-do-list{
+background-color: rgb( 211, 183, 232);
+border-width: 30px;
+border-style: solid;
+border-color: #99897A;
+margin: 10px;
+clear: both;
+width: 400px;
+font-family: 'Nothing You Could Do';
+float: left;}
+
+header{
+height: 270px;
+background-image: url('images/winterracedark.jpg');
+background-size: cover;
+background-position: center;
+padding: 80px 50px 50px;
+}
+
+.headerText{
+width: 880px;
+height: 180px;
+background-color: rgba(0, 0, 0, 0.5); 
+color: rgb(189, 213, 255);
+font-family: 'Roboto Condensed';
+font-size: 56px;
+text-align: center;
+}
+
+body{
+background-color: black;
+padding: 0px;
+color: rgb(0, 0, 0)
+}
+
+h1{
+margin: 0px;    
+}
+
+h2{
+margin: 0px;
+}
+
+h6{
+margin: 0px;   
+}
+
+nav{
+background-color: rgb( 255, 245, 177);
+text-align: center;
+padding: 3px;
+}
+
+nav li{
+display: inline;
+font-size: 28px;    
+margin: 0px 100px 0px;  
+}
+
+.text{
+width: 600px;
+font-size: 18px;
+margin: 40px auto 10px;
+}
+
+nav a{
+color: rgb( 76, 60, 51);
+font-family: 'Roboto Condensed';
+}
+
+#writeUpTexts{
+width: 1024px;
+background-color: rgb( 211, 183, 232);
+margin: 20px auto 20px;
+padding: 10px;
+color: black;
+}
+
+#beachImages{
+margin: 10px auto 0px;
+text-align: center;
+}
+
+#beachImages img{
+display: inline;    
+}
+
+.pagesBodyFormat{
+color: rgb(255, 123, 127);    
+}
+
+.pagesBodyFormat pre{
+color: rgb(189, 213, 255);
+}
+
+.example{
+margin-top: 30px;    
+}
+
+.exampleImage{
+margin: 30px 0px 30px;    
+}
