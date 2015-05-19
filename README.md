@@ -1,0 +1,1 @@
+Personal website created during Skillcrush blueprint course, then updated in Summer 2014. Changes to come

@@ -1,114 +1,152 @@
+body{
+background-color: #FFFFFF;
+padding: 0px;
+}
+
+/* Palette - Primary: Yellow 500 (#FFEB3B), 100 (#FFF9C4), 600 (#FDD835) Accent: Deep Orange A400 (#FF3D00), Back-ups A200 (#FF6E40) and A700 (#DD2C00)*/
+
+/* BEGIN TYPOGRAPHY FORMATTING
+
+*--font-size and weight based on material design with h1-4 replacing display 4-1, all other class titles remain the same as in MD 
+
+*/
+
+h1{
+margin: 0px;
+font-size: 84px;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+
+h2{
+margin: 0px;
+font-size: 42px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;    
+}
+
+h3{
+font-size: 34px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;   
+}
+
+h4{
+font-size: 26px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;   
+}
+
+.headline{
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;   
+}
+
+.title{
+font-size: 15px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+}
+
+.subhead{
+font-size: 11px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+
+.body2{
+font-size: 10px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+}
+
+.body1{
+font-size: 10px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.caption{
+font-size: 9px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.button{
+font-size: 9px;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;    
+}
+
+/* -- END TYPOGRAPHY FORMATTING
+
+*/
+
+div{
+border: solid black 5px;
+}
+
 #intro{
 background-color: rgb(189, 213, 255);
-color: navy;
-font-size: 18px;
-font-family: 'Roboto Condensed';
-word-spacing: 6px;
 margin: 10px 10px 10px;
 padding: 10px;
 text-align: justify;
 width: 700px;
 float: left;}
 
-#to-do-list{
-background-color: rgb( 211, 183, 232);
-border-width: 30px;
-border-style: solid;
-border-color: #99897A;
-margin: 10px;
-clear: both;
-width: 400px;
-font-family: 'Nothing You Could Do';
-float: left;}
-
 header{
-height: 270px;
-background-image: url('images/winterracedark.jpg');
-background-size: cover;
-background-position: center;
-padding: 80px 50px 50px;
+height: 400px;
+padding: 0px;
+display: flex;
+flex-direction: column;
+background-color: #FFEB3B;
 }
 
 .headerText{
-width: 880px;
-height: 180px;
-background-color: rgba(0, 0, 0, 0.5); 
-color: rgb(189, 213, 255);
-font-family: 'Roboto Condensed';
-font-size: 56px;
 text-align: center;
 }
 
-body{
-background-color: black;
-padding: 0px;
-color: rgb(0, 0, 0)
+.titleSpace{
+display: flex;
+flex-direction: row;
+flex: 3;
 }
 
-h1{
-margin: 0px;    
+#headshotContainer{
+flex: 1;
 }
 
-h2{
-margin: 0px;
+#headshot{
+margin: auto;
+display: block;
+border: solid black 1px;
+border-radius: 150px;
+max-height: 300px;
 }
 
-h6{
-margin: 0px;   
+#title{
+flex: 2;
+margin: 0px auto 0px;
 }
 
 nav{
-background-color: rgb( 255, 245, 177);
-text-align: center;
+display: block;
+text-align: right;
 padding: 3px;
+flex: 1;
 }
 
 nav li{
 display: inline;
-font-size: 28px;    
-margin: 0px 100px 0px;  
+font-size: 24px;    
+margin: 0px 0px 0px;  
 }
 
-.text{
-width: 600px;
-font-size: 18px;
-margin: 40px auto 10px;
+#goals{
+width: 100%;
+padding: 5% 20% 5%;
 }
 
-nav a{
-color: rgb( 76, 60, 51);
-font-family: 'Roboto Condensed';
-}
-
-#writeUpTexts{
-width: 1024px;
-background-color: rgb( 211, 183, 232);
-margin: 20px auto 20px;
-padding: 10px;
-color: black;
-}
-
-#beachImages{
-margin: 10px auto 0px;
-text-align: center;
-}
-
-#beachImages img{
-display: inline;    
-}
-
-.pagesBodyFormat{
-color: rgb(255, 123, 127);    
-}
-
-.pagesBodyFormat pre{
-color: rgb(189, 213, 255);
-}
-
-.example{
-margin-top: 30px;    
-}
-
-.exampleImage{
-margin: 30px 0px 30px;    
-}
